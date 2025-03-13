@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Compras</title>
+</head>
+<body>
+    <h1>Lista de Compras</h1>
+    
+    <form id="form">
+        <label for="nombreProducto">Nombre del Producto</label>
+        <input type="text" id="nombreProducto" name="nombreProducto" required>
+        
+        <label for="cantidadProducto">Cantidad</label>
+        <input type="number" id="cantidadProducto" name="cantidadProducto" required>
+
+        <button type="submit">Agregar</button>
+    </form>
+
+    <button id="filtroNoComprados">Filtrar No Comprados</button>
+    <button id="filtroComprados">Filtrar Comprados</button>
+    <button id="filtroTodos">Mostrar Todos</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="taskList"></tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
